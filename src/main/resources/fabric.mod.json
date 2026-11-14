@@ -1,0 +1,27 @@
+{
+	"schemaVersion": 1,
+	"id": "shieldbreakskin",
+	"version": "${version}",
+	"name": "Shield Break Skin",
+	"description": "Client-side only. When you disable a player's shield with an axe, their shield is hidden and their skin is swapped for a custom one until the shield cooldown ends. Only you see it.",
+	"authors": [],
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.example.shieldbreakskin.ShieldBreakSkinClient"
+		]
+	},
+	"mixins": [
+		{
+			"config": "shieldbreakskin.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.0",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

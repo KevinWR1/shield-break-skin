@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "com.example.shieldbreakskin.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"ClientPlayNetworkHandlerMixin",
+		"LivingEntityMixin",
+		"PlayerEntityRenderStateMixin",
+		"PlayerEntityRendererMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
